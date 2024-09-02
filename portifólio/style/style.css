@@ -1,0 +1,171 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444444;
+}
+
+/* Seções Principais */
+.intro, .about, .projects, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #333333;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo para Imagem de Perfil */
+.intro img, .about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #555555;
+}
+
+/* Seção de Projetos */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #444444;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário de Contato */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact label {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555555;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #777777;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .social-media {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media li {
+    display: inline;
+}
+
+footer .social-media li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
