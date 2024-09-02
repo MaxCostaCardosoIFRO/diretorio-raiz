@@ -1,39 +1,30 @@
-Com certeza! 😊 Vamos criar um exemplo simples de como usar o Flexbox para criar um layout responsivo para um site de notícias.
-
-HTML (index.html):
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias do Dia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GameArts</title>
+    <link rel="stylesheet" href="style/inicial.css">
 </head>
 <body>
-    <header>
-        <h1>Notícias do Dia</h1>
-    </header>
+    <div class="container">
+        <button onclick="window.location.href='tela1.html'" class="button">
+            <img src="img/logolol.webp" alt="League of Legends" style="width: 100px; height: auto;">
+            <br>
+        </button>
 
-    <main>
-        <section class="noticias">
-            <article>
-                <h2>Título da Notícia 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </article>
-            <article>
-                <h2>Título da Notícia 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </article>
-            <article>
-                <h2>Título da Notícia 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            </article>
-        </section>
-    </main>
+        <button onclick="window.location.href='tela2.html'" class="button">
+            <img src="img/blaspemuslogo.png" alt="Blasphemous" style="width: 100px; height: auto;">
+            <br>
+        </button>
 
-    <footer>
-        <p>&copy; 2023 Notícias do Dia</p>
+        <button onclick="window.location.href='telaartistas.html'" class="buttonesp">
+            <h1>Artistas</h1>
+        </button>
+    </div>
+
+    <footer class="footer">
+        <p>2°A Informática Max Costa</p>
     </footer>
 </body>
 </html>
