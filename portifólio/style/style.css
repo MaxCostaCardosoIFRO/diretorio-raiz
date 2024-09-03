@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #2b2b2b;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Cabeçalho e Navegação */
@@ -41,37 +44,41 @@ nav ul li a:hover {
 
 /* Seções Principais */
 .intro, .about, .projects, .contact {
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
     background-color: #333333;
     margin-bottom: 20px;
     border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Estilo para Imagem de Perfil */
-.intro img, .about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.intro img, .about img, .projects img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
     border: 3px solid #555555;
 }
 
-/* Seção de Projetos */
 .projects {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Seção de Projetos */
 .project-card {
     background-color: #444444;
     border: 1px solid #555555;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    width: 250px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -124,6 +131,8 @@ footer {
     background-color: #1a1a1a;
     padding: 10px 0;
     text-align: center;
+    margin-top: auto;
+    width: 100%;
 }
 
 footer .social-media {
@@ -162,7 +171,7 @@ footer .social-media li a img:hover {
     }
 
     .project-card {
-        width: 80%;
+        width: 90%;
     }
 
     .contact form {
